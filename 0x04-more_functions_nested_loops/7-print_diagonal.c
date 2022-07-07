@@ -3,22 +3,30 @@
 /**
  * print_diagonal - draws diagonal line
  * @n: number of \ to print
+ * Return: 0
  */
 void print_diagonal(int n)
 {
-	int len, space;
+	int x, y;
 
 	if (n > 0)
 	{
-	for (len = 0; len < n; len++)
+		for (x = 1; x <= n; x++)
+		{
+			for (y = 1; y <= n; y++)
+			{
+				if (x == y)
+				{
+					_putchar(92);
+					break;
+				}
+				_putchar(' ');
+			}
+			_putchar('\n');
+		}
+	}
+	else
 	{
-		for (space = 0; space < len; space++)
-			_putchar(' ');
-			_putchar('\\');
-		if (len == n - 1)
-		continue;
-			_putchar('\n');
+		_putchar('\n');
 	}
-	}
-			_putchar('\n');
 }
