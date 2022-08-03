@@ -6,13 +6,14 @@
  * new_dog - new dog
  * @name: dog name
  * @age: dog age
- * @char: dog's owner
+ * @owner: dog's owner
+ * Return: newdog
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	int i = 0;
-	int j =0;
+	int j = 0;
 	int k;
 	dog_t *doge;
 
